@@ -14,9 +14,20 @@ The Backend/Server Node.js Application provides the following APIs:
 
 ## Preview
 
+### DB Design for Files Collection
+
 ![DB Design for Files Collection](./backend/screenshots/DBDesign_Files.png)
+
+### DB Design for Users Collection
+
 ![DB Design for Users Collection](./backend/screenshots/DBDesign_Users.png)
+
+### Fetching the Records from Files Collection via POSTMAN
+
 ![Fetching the Records from Files Collection via POSTMAN](./backend/screenshots/GetFiles.png)
+
+### Uploading file to the Files Collection via POSTMAN
+
 ![Uploading file to the Files Collection via POSTMAN](./backend/screenshots/UploadFiles.png)
 
 ## API Endpoints
