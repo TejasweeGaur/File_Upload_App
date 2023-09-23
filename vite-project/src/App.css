@@ -1,0 +1,26 @@
+/** @format */
+.files {
+  margin-top: 2rem;
+  height: 400px;
+  width: auto;
+  display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+}
+.file {
+  height: 350px;
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.hidden {
+  display: none;
+}
+
+#docViewer {
+  height: 300px;
+  width: 100vw;
+}
