@@ -1,5 +1,24 @@
 <!-- @format -->
 
+# Table of Contents
+
+- [File Upload and Download System](#file-upload-and-download-system)
+- [Basic Information](#basic-information)
+- [Preview](#preview)
+  - [DB Design for Files Collection](#db-design-for-files-collection)
+  - [DB Design for Users Collection](#db-design-for-users-collection)
+  - [Fetching the Records from Files Collection via POSTMAN](#fetching-the-records-from-files-collection-via-postman)
+  - [Uploading file to the Files Collection via POSTMAN](#uploading-file-to-the-files-collection-via-postman)
+- [API Endpoints](#api-endpoints)
+- [Client Code (Vite+React)](#client-code-vitereact)
+  - [Usage](#usage)
+- [Server Code (Node.js, Express, Multer, Cors)](#server-code-nodejs-express-multer-cors)
+  - [Usage](#usage-1)
+- [MongoDB Configuration](#mongodb-configuration)
+- [API Usage](#api-usage)
+- [Feature to Come](#feature-to-come)
+- [Author](#author)
+
 # File Upload and Download System
 
 This repository contains a Node.js application for handling file uploads, listing file information, and downloading files. The application consists of a server-side component built with Node.js, Express, Multer, and Cors, as well as a client-side component using Vite and React.
@@ -72,7 +91,7 @@ The application is configured to use a local MongoDB database at `mongodb://conn
 - Click the "Get Files" button to retrieve a list of uploaded files with their names and URLs.
 - To download a file, click on the file name in the list.
 
-## Feature to Come
+## Features to Come
 
 - Login Authorization
 - Different Client Views for Uploading and Downloading Files
