@@ -12,13 +12,20 @@ The Backend/Server Node.js Application provides the following APIs:
 - **Get Files**: Retrieves a list of files' information, including file name and URL.
 - **Download File**: Enables users to download a file/image from the server using the provided URL.
 
+## Preview
+
+![DB Design for Files Collection](./backend/screenshots/DBDesign_Files.png)
+![DB Design for Users Collection](./backend/screenshots/DBDesign_Users.png)
+![Fetching the Records from Files Collection via POSTMAN](./backend/screenshots/GetFiles.png)
+![Uploading file to the Files Collection via POSTMAN](./backend/screenshots/UploadFiles.png)
+
 ## API Endpoints
 
-| Methods | URL                 | Actions                         |
-| ------- | ------------------- | ------------------------------- |
-| POST    | `/upload`           | Upload a File/Image             |
-| GET     | `/files`            | Get List of Images (name & url) |
-| GET     | `/files/[filename]` | Download a File                 |
+| Methods | URL              | Actions                         |
+| ------- | ---------------- | ------------------------------- |
+| POST    | `/upload`        | Upload a File/Image             |
+| GET     | `/files`         | Get List of Images (name & url) |
+| GET     | `/files/:fileId` | Download a File                 |
 
 ## Client Code (Vite+React)
 
@@ -30,7 +37,7 @@ The client-side code is built using Vite and React. It provides a user-friendly 
 2. Navigate to the `client` directory.
 3. Run `npm install` to install the necessary dependencies.
 4. Start the development server using `npm run dev`.
-5. Access the application at `http://localhost:3000`.
+5. Access the application at `http://localhost:port`.
 
 ## Server Code (Node.js, Express, Multer, Cors)
 
@@ -42,7 +49,7 @@ The server-side code is built with Node.js, Express, Multer, and Cors. It handle
 2. Navigate to the `server` directory.
 3. Run `npm install` to install the necessary dependencies.
 4. Start the server using `npm start`.
-5. The server will be running at `http://localhost:3000`.
+5. The server will be running at `http://localhost:port`.
 
 ## MongoDB Configuration
 
@@ -54,9 +61,16 @@ The application is configured to use a local MongoDB database at `mongodb://conn
 - Click the "Get Files" button to retrieve a list of uploaded files with their names and URLs.
 - To download a file, click on the file name in the list.
 
+## Feature to Come
+
+- Login Authorization
+- Different Client Views for Uploading and Downloading Files
+- Session Tracking using JWT Tokens
+- Assigning Roles so that users with appropriate access can Upload files only after proper verification and review.
+
 ## Author
 
-This project is maintained by Tejaswee Gaur 🇮🇳.
+This project is maintained by Tejaswee Gaur 😎.
 
 Feel free to contribute or report issues if you encounter any problems with the application.
 
